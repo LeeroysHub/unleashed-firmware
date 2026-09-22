@@ -37,6 +37,7 @@ static const char* const known_ext[] = {
     [ArchiveFileTypeFolder] = "?",
     [ArchiveFileTypeUnknown] = "*",
     [ArchiveFileTypeAppOrJs] = ".fap|.js",
+    [ArchiveFileTypeCrossRemote] = ".xr",
     [ArchiveFileTypeSetting] = "?",
 };
 
@@ -53,6 +54,7 @@ static const ArchiveFileTypeEnum known_type[] = {
     [ArchiveTabApplications] = ArchiveFileTypeAppOrJs,
     [ArchiveTabInternal] = ArchiveFileTypeUnknown,
     [ArchiveTabBrowser] = ArchiveFileTypeUnknown,
+    [ArchiveFileTypeCrossRemote] = ArchiveFileTypeCrossRemote,
 };
 
 static inline ArchiveFileTypeEnum archive_get_tab_filetype(ArchiveTabEnum tab) {

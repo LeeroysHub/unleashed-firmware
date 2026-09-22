@@ -35,6 +35,8 @@ static const char* archive_get_flipper_app_name(ArchiveFileTypeEnum file_type) {
         return EXT_PATH("apps/assets/js_app.fap");
     case ArchiveFileTypeFolder:
         return "Archive";
+    case ArchiveFileTypeCrossRemote:
+        return EXT_PATH("apps/Infrared/xremote.fap");
     default:
         return NULL;
     }

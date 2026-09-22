@@ -25,6 +25,7 @@ typedef enum {
     ArchiveFileTypeAppOrJs,
     ArchiveFileTypeSetting,
     ArchiveFileTypeLoading,
+    ArchiveFileTypeCrossRemote,
 } ArchiveFileTypeEnum;
 
 typedef struct {
